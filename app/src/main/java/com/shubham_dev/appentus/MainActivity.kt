@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
 
                 if (!loading) {
                     if (visibleItemCount + firstVisibleItemPosition >= totalItemCount && firstVisibleItemPosition >= 0) {
+                        Log.e("shubham",pageNo.toString())
                         pbar.visibility = View.VISIBLE
                         pageNo++
                         loading=true
